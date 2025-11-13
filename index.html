@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N0CTURA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="main-header">
+  <div class="logo">N0CTURA</div>
+  <nav>
+    <a href="#about">Kdo jsme</a>
+    <a href="#crew">Crew</a>
+    <a href="#services">Naše služby</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>THIS IS N0CTURA</h1>
+    <p>NOT A BRAND. A FEELING.</p>
+    <a href="#crew" class="btn">Naše crew</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Kdo jsme</h2>
+  <p>N0CTURA je tým lidí, kteří žijí a dýchají eventy. Vytváříme atmosféru plnou energie, stylu a autenticity – od menších soukromých akcí, přes firemní večírky, až po velké brandové eventy, vždy s naším osobitým přístupem.</p>
+  <p>Spojujeme hudbu, gastronomii, vizuální design a kreativní produkci do jednoho celku. Nejde nám o šablony ani korporátní pravidla – jde nám o zážitky, které zanechají vzpomínky, nadchnou hosty a dodají každé události originální energii.</p>
+</section>
+
+<section class="crew" id="crew">
+  <h2>Crew</h2>
+  <div class="box-grid">
+    <div class="box">
+      <img src="https://i.imgur.com/DeW9A7d.png" alt="Raf">
+      <h3>Rafael "Raf" Maren</h3>
+      <p>N0CTURA founder, creative head & drive celé crew.</p>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/j7KFFZ3.png" alt="Kiko">
+      <h3>James "JL" Lauren</h3>
+      <p>N0CTURA face, vizuální mastermind & vibe creator.</p>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/j7KFFZ3.png" alt="Zrzek">
+      <h3>Louis "LV" Vuitton</h3>
+      <p>N0CTURA voice, public relations & connection builder.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>Naše služby</h2>
+  <div class="box-grid">
+    <div class="box"><h3>🎧 DJs & Live Sets</h3><p>Hudba, která rozhýbe dav. DJs, stage setup, mixy i světelná show.</p></div>
+    <div class="box"><h3>🍸 Barmani & Drink Show</h3><p>Signature drinky, showtime barmani a bar catering, co má koule.</p></div>
+    <div class="box"><h3>🔥 Kuchaři & Street Food</h3><p>Od foodtrucku po event catering – jídlo, co má chuť i styl.</p></div>
+    <div class="box"><h3>🛡️ Security & Event Staff</h3><p>Bezpečnost, profesionalita, hladký průběh. Všechno pod kontrolou.</p></div>
+    <div class="box"><h3>🎨 Grafika & Promo</h3><p>Vizuál, design, plakáty, promo. Styl, co mluví sám za sebe.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Kontakt</h2>
+      <p>Objednávky, dotazy, spolupráce - všechno směřujte sem.</p>
+    </div>
+
+    <form id="contactForm">
+      <label for="name">Jméno</label>
+      <input type="text" id="name" placeholder="Vaše celé jméno" required>
+
+      <label for="email">Post</label>
+      <input type="email" id="email" placeholder="Vaše post.ic adresa" required>
+
+      <label for="message">Zpráva</label>
+      <textarea id="message" placeholder="Sem napište svou zprávu..." required></textarea>
+
+      <button type="submit" class="btn">Odeslat</button>
+    </form>
+  </div>
+</section>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>Děkujeme za zprávu!</h3>
+    <p>Vaše zpráva byla úspěšně odeslána.<br>Naše crew se Vám brzy ozve zpět.</p>
+    <button id="closePopup" class="btn">Zavřít</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>N0CTURA</h3>
+      <p>Kompletní servis pro každou akci<br>
+      Pozvedni svůj event</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Odkazy</h3>
+      <ul>
+        <li><a href="#about">Kdo jsme</a></li>
+        <li><a href="#crew">Crew</a></li>
+        <li><a href="#services">Naše služby</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Sleduj nás</h3>
+      <div class="footer-social">
+        <a href="https://artic.leosight.cz/iris.ic/rafa" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="img/iris.png" alt="Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Tento web je provozován společností N0CTURA, PO N0CTURA, IČ: 786
+  </div>
+</footer>
+
+<script>
+let lastScroll = 0;
+const header = document.getElementById("main-header");
+window.addEventListener("scroll", () => {
+  const current = window.scrollY;
+  if (current > lastScroll && current > 100) {
+    header.classList.add("hidden");
+  } else {
+    header.classList.remove("hidden");
+  }
+  lastScroll = current;
+});
+
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  popup.classList.add("show");
+  setTimeout(() => popup.classList.remove("show"), 5000);
+});
+
+closePopup.addEventListener("click", () => popup.classList.remove("show"));
+</script>
+
+</body>
+</html>
